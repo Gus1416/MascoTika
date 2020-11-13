@@ -2,38 +2,46 @@
 package Modelo;
 
 
+
 public class Procedimiento {
     
-    private int IDProcedimiento;
+    private String IDProcedimiento;
     private String Tipo;
     private int MontoUnitario;
     private String DescripcionProcedimiento;
     private int MontoServAdom;
+    private int CodigoCategoria;
+    private int IDPaciente;
 
     public Procedimiento() {
     }
-    
-    public Procedimiento(int IDProcedimiento, String Tipo, int MontoUnitario, String DescripcionProcedimiento, int MontoServAdom) {
+
+    public Procedimiento(String IDProcedimiento, String Tipo,int MontoUnitario, int MontoServAdom,String DescripcionProcedimiento, int CodigoCategoria, int IDPaciente) {
         this.IDProcedimiento = IDProcedimiento;
         this.Tipo = Tipo;
         this.MontoUnitario = MontoUnitario;
         this.DescripcionProcedimiento = DescripcionProcedimiento;
         this.MontoServAdom = MontoServAdom;
+        this.CodigoCategoria = CodigoCategoria;
+        this.IDPaciente = IDPaciente;
     }
 
+
+    
+  
   
     
     /**
      * @return the IDProcedimiento
      */
-    public int getIDProcedimiento() {
+    public String getIDProcedimiento() {
         return IDProcedimiento;
     }
 
     /**
      * @param IDProcedimiento the IDProcedimiento to set
      */
-    public void setIDProcedimiento(int IDProcedimiento) {
+    public void setIDProcedimiento(String IDProcedimiento) {
         this.IDProcedimiento = IDProcedimiento;
     }
 

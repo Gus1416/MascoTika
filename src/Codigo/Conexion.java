@@ -18,7 +18,7 @@ public class Conexion {
         
          String password = "2019024516";
          String usuario = "SebCor";
-        String url = "jdbc:sqlserver://DESKTOP-PHP5KCJ\\SEBCORDB:1433;databaseName=Sistema MascoTika;user=" + usuario
+        String url = "jdbc:sqlserver://DESKTOP-PHP5KCJ\\SEBCORDB:1433;databaseName=test;user=" + usuario
                         + ";password=" + password;
         try {
                 con = DriverManager.getConnection(url);

@@ -8,6 +8,7 @@ public class CitaMedica {
     private String IDCitaMed;
     private Date Fecha;
     private String Estado;
+ 
 
     public CitaMedica() {
     }
